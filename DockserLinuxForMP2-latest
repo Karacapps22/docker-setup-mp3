@@ -105,5 +105,3 @@ Common docker run command:
 
     *** Downloads the container amazonlinix and starts it at the bash command prompt in your current dir
     *** Also names the running container mycontainer so you can see it with docker ps
-
-    #if you
