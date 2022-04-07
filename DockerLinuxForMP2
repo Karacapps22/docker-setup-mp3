@@ -4,11 +4,7 @@ Install docker for mac from https://docs.docker.com/desktop/mac/apple-silicon/
 
 # load and build container
     docker run --name=<name> --platform linux/x86_64 -it --net=host -v $(pwd):$(pwd) -w $(pwd) amazonlinux /bin/bash
-    #run personal repository
-    docker run --name=<name> --platform linux/x86_64 -it --net=host -v $(pwd):$(pwd) -w $(pwd) <repository> /bin/bash
-
-    #start a different terminal in the same container
-    docker exec -it <name> /bin/bash
+    
 # You're now in your container
 
 # Container prep
@@ -102,6 +98,12 @@ Common docker commands
 
 Common docker run command:
    docker run -it --net=host -v $(pwd):$(pwd) -w $(pwd) --name=mycontainer amazonlinux /bin/bash
+   
+   #run personal repository
+    docker run --name=<name> --platform linux/x86_64 -it --net=host -v $(pwd):$(pwd) -w $(pwd) <repository> /bin/bash
+
+    #start a different terminal in the same container
+    docker exec -it <name> /bin/bash
 
     *** Downloads the container amazonlinix and starts it at the bash command prompt in your current dir
     *** Also names the running container mycontainer so you can see it with docker ps
