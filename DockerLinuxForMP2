@@ -56,6 +56,7 @@ Cloning, building and installing gRPC & Protobuf
 *** Done with PDF install instructions
 
 After all packages are installed, change back to your working dir
+    //If workdir didnt work correctly, just navigate back to the correct directory 
     cd $WORKDIR
 
 To save your current docker image with all packages installed
